@@ -17,22 +17,25 @@
     </style>
 
     <script>
-        function q1() {
-            // 여기에 코드를 입력하세요
-            let num = $("#input").val()
-            $.ajax({
-                type: "GET",
-                url: "http://numbersapi.com/" + num,
-                data: {},
-                success: function (response) {
-                    // console.log(response[0]["url"])
-                    // $("#img-cat").attr()
-                    $("#img-cat").attr('src', response[0]["url"])
+      function q1() {
+        // 여기에 코드를 입력하세요
+        // ㅁㄴㅇㄹㅁㄴㅇㄹㅁㄴㅇㄹ
+        // ㅁㄴㅇㄹㅁㄴㅇㄹㅁㄴㅇㄹ
+        // ㅁㄴㅇㄹㅁㄴㅇㄹㅁㄴㅇㄹ
+        // ㅁㄴㅇㄹㅁㄴㅇㄹㅁㄴㅇㄹ
 
-
-                }
-            })
-        }
+        let num = $("#input").val();
+        $.ajax({
+          type: "GET",
+          url: "http://numbersapi.com/" + num,
+          data: {},
+          success: function (response) {
+            // console.log(response[0]["url"])
+            // $("#img-cat").attr()
+            $("#img-cat").attr("src", response[0]["url"]);
+          },
+        });
+      }
     </script>
   </head>
 
